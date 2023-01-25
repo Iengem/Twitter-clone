@@ -163,6 +163,7 @@
 .firstline{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
 }
 .lastline{
@@ -182,4 +183,34 @@
     color: rgb(83, 100, 113);
     line-height: 16px;
     text-decoration: none;
+}
+@media screen and (max-width:990px){
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .twitter-img{
+        height: 286px;
+        object-fit: cover;
+    }
+    .text{
+        padding-left: 20vw;
+    }
+    .firstline{
+        gap: 10px;
+    }
+    .zipperman{
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width:786px){
+    .text{
+        padding-left: 10vw;
+    }
+}
+@media screen and (max-width:540px){
+    .text h1{
+        font-size: 40px;
+    }
 }
